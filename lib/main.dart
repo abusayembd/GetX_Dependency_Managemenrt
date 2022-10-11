@@ -8,6 +8,7 @@ import 'dependency_management/a_instancing_methods/b_get_lazy_put/get_Lazy_put_d
 import 'dependency_management/a_instancing_methods/c_get_put_async/view.dart';
 import 'dependency_management/a_instancing_methods/d_get_create/view.dart';
 import 'dependency_management/b_find_controller/two_different_ways_of_finding_controller/view.dart';
+import 'dependency_management/c_alternet_controller/alternet_controller_get_replace/view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -25,6 +26,7 @@ class MyApp extends StatelessWidget {
     //return const DependencyExampleGetLazyPutWithoutKillingController();
     //return const DependencyExampleGetDotPutAsync();
     //return const DependencyExampleGetDotCreate();
-    return WaysOfFindingController();
+    //return WaysOfFindingController();
+    return DependencyExampleAlternetControllerGetReplace();
   }
 }
