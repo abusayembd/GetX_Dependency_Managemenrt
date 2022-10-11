@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:getx_dependency_management/dependency_management/a_instancing_methods/a_get_put/get_put_multiple_and_tag_and_permanent_attribute/view.dart';
+import 'package:getx_dependency_management/dependency_management/c_alternet_controller/alternet_controller_get_lazy_replace/view.dart';
 
 import 'dependency_management/a_instancing_methods/b_get_lazy_put/get_Lazy_put/view.dart';
 import 'dependency_management/a_instancing_methods/b_get_lazy_put/get_Lazy_put_donot_kill_controller/view.dart';
@@ -27,6 +28,7 @@ class MyApp extends StatelessWidget {
     //return const DependencyExampleGetDotPutAsync();
     //return const DependencyExampleGetDotCreate();
     //return WaysOfFindingController();
-    return DependencyExampleAlternetControllerGetReplace();
+    //return DependencyExampleAlternetControllerGetReplace();
+    return DependencyExampleAlternetControllerGetLazyReplace();
   }
 }

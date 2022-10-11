@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:getx_dependency_management/dependency_management/c_alternet_controller/alternet_controller_get_replace/class.dart';
-import 'package:getx_dependency_management/dependency_management/c_alternet_controller/alternet_controller_get_replace/controller.dart';
-import 'package:getx_dependency_management/dependency_management/c_alternet_controller/alternet_controller_get_replace/detail_page.dart';
+import 'package:getx_dependency_management/dependency_management/c_alternet_controller/alternet_controller_get_lazy_replace/controller.dart';
+import 'package:getx_dependency_management/dependency_management/c_alternet_controller/alternet_controller_get_lazy_replace/detail_page.dart';
+import 'class_three.dart';
 
-class DependencyExampleAlternetControllerGetReplace extends StatelessWidget {
-  DependencyExampleAlternetControllerGetReplace({super.key});
+class DependencyExampleAlternetControllerGetLazyReplace
+    extends StatelessWidget {
+  DependencyExampleAlternetControllerGetLazyReplace({super.key});
 
   // though this way is ok but in real life usually we forget the order
   // like here if we use parent before child
@@ -14,9 +15,11 @@ class DependencyExampleAlternetControllerGetReplace extends StatelessWidget {
   //final parent = Get.put<Parent>(Parent());
 
   //
-  //best approach to use Get.replace which reduce the hassle of keeping track
+  //best approach to use Get.Lazyreplace which reduce the hassle of keeping track
+  //defference between get.replace and get.lazyreplace is time
+  // get.replace inject dependency imnstantly but  get.lazyreplace inject when nedded/called
   final parent = Get.put<Parent>(Parent());
-  final child = Get.replace<Parent>(Child());
+  final child = Get.lazyReplace<Parent>(() => Child());
 
   @override
   Widget build(BuildContext context) {
@@ -31,7 +34,7 @@ class DependencyExampleAlternetControllerGetReplace extends StatelessWidget {
               //you can implement it in bunding class or 2nd approach is BindingBuilder used here
               //lazyLoad a dependency only when is used. a shortcut method.
 
-              Get.lazyPut<ControllerFourteen>(() => ControllerFourteen());
+              Get.lazyPut<ControllerFifteen>(() => ControllerFifteen());
             },
           ),
         ),
@@ -39,8 +42,8 @@ class DependencyExampleAlternetControllerGetReplace extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: const Text(
-            'GetX Dependency management alternet controller();',
-            style: TextStyle(fontSize: 16),
+            'GetX Dependency management alternet controller() get.lazyreplace;',
+            style: TextStyle(fontSize: 12),
           ),
         ),
         body: Center(
