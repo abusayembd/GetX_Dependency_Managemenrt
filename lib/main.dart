@@ -10,6 +10,7 @@ import 'dependency_management/a_instancing_methods/c_get_put_async/view.dart';
 import 'dependency_management/a_instancing_methods/d_get_create/view.dart';
 import 'dependency_management/b_find_controller/two_different_ways_of_finding_controller/view.dart';
 import 'dependency_management/c_alternet_controller/alternet_controller_get_replace/view.dart';
+import 'dependency_management/d_binding/binding_vaya_creating_class/view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -29,6 +30,7 @@ class MyApp extends StatelessWidget {
     //return const DependencyExampleGetDotCreate();
     //return WaysOfFindingController();
     //return DependencyExampleAlternetControllerGetReplace();
-    return DependencyExampleAlternetControllerGetLazyReplace();
+    //return DependencyExampleAlternetControllerGetLazyReplace();
+    return DependencyExampleBindingVayaClass();
   }
 }
