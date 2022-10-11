@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:getx_dependency_management/dependency_management/d_binding/binding_vaya_creating_class/controller.dart';
+import 'package:getx_dependency_management/dependency_management/d_binding/binding_by_creating_binding_class_&_namedroute/controller.dart';
 
 class DetailPage extends StatelessWidget {
   DetailPage({super.key});
