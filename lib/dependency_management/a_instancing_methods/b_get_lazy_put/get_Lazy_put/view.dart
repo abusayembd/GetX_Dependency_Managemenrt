@@ -13,7 +13,8 @@ class DependencyExampleGetLazyPut extends StatelessWidget {
         GetPage(
           name: '/detail',
           page: () => DetailPage(),
-          //building: DetailsBinding(),
+          //building: DetailsBinding(), // to use this you need buinding class created in binding.dart file
+          //if use buinding builder you don't need this buinding class  created in binding.dart file
           binding: BindingsBuilder(
             () {
               //you can implement it in bunding class or 2nd approach is BindingBuilder used here

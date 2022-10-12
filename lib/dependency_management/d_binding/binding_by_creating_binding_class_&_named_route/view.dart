@@ -3,8 +3,9 @@ import 'package:get/get.dart';
 import 'binding.dart';
 import 'detail_page.dart';
 
-class DependencyExampleBindingVayaClass extends StatelessWidget {
-  const DependencyExampleBindingVayaClass({super.key});
+class DependencyExampleBindingVayaBindingClassAndNamedRoute
+    extends StatelessWidget {
+  const DependencyExampleBindingVayaBindingClassAndNamedRoute({super.key});
 
   @override
   Widget build(BuildContext context) {

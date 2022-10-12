@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:getx_dependency_management/dependency_management/a_instancing_methods/a_get_put/get_put_multiple_and_tag_and_permanent_attribute/class.dart';
+import 'package:getx_dependency_management/dependency_management/a_instancing_methods/c_get_put_async/class.dart';
 import 'package:getx_dependency_management/dependency_management/a_instancing_methods/c_get_put_async/controller.dart';
 import 'package:getx_dependency_management/dependency_management/a_instancing_methods/c_get_put_async/detail_page.dart';
 

@@ -10,7 +10,10 @@ import 'dependency_management/a_instancing_methods/c_get_put_async/view.dart';
 import 'dependency_management/a_instancing_methods/d_get_create/view.dart';
 import 'dependency_management/b_find_controller/two_different_ways_of_finding_controller/view.dart';
 import 'dependency_management/c_alternet_controller/alternet_controller_get_replace/view.dart';
-import 'dependency_management/d_binding/binding_by_creating_binding_class_&_namedroute/view.dart';
+import 'dependency_management/d_binding/binding_by_creating_binding_class_&_named_route/view.dart';
+import 'dependency_management/d_binding/binding_by_creating_binding_class_&_normal_route/view.dart';
+import 'dependency_management/d_binding/binding_shortcut_using_buinding_builder/view.dart';
+import 'dependency_management/e_smart_management/smart_management_full_onlybuilder_keepfactory/view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -31,6 +34,9 @@ class MyApp extends StatelessWidget {
     //return WaysOfFindingController();
     //return DependencyExampleAlternetControllerGetReplace();
     //return DependencyExampleAlternetControllerGetLazyReplace();
-    return DependencyExampleBindingVayaClass();
+    //return const DependencyExampleBindingVayaBindingClassAndNamedRoute();
+    //return const DependencyExampleBindingVayaBindingClassAndNormalRoute();
+    //return const DependencyExampleBindingShortcutUsingBuindingBuilder();
+    return const DependencyExampleSmartManagementFullAndOnlyBuilderAndKeepFactory();
   }
 }
